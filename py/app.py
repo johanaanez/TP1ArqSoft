@@ -1,16 +1,16 @@
 import time
-from flask import flask
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route("/")
-def ping()
+def ping():
 	return "python - ping"
 
 @app.route("/timeout")
-def timeout()
+def timeout():
 	time.sleep(5);
 	return "python - timeout"
 
-if __name__ == "__main__";
+if __name__ == "__main__":
 	app.run()
