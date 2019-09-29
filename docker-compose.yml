@@ -40,19 +40,18 @@ services:
             - "/:/rootfs:ro"
             - "/var/run:/var/run:rw"
             - "/sys:/sys:ro"
-            - "/var/lib/docker/:/var/lib/docker:ro"
-    tp1-node:
+    node:
         build: 
             context: ./js
             dockerfile: Dockerfile
         ports:
             - "3000:3000"
-    tp1-python:
+    gunicorn:
         build: 
             context: ./py
             dockerfile: Dockerfile
         ports:
-            - "5000:5000"
+            - "8000:8000"
 
 volumes:
     grafana_config:
