@@ -17,7 +17,7 @@ def timeout():
 def heavy():
   start = datetime.now()
   startToMillisecond = start.timestamp() * 1000
-  times = 99999
+  times = 99999999999999
   for i in range(times):
     now = datetime.now()
     nowToMillisecond = now.timestamp() * 1000
