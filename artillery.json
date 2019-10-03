@@ -1,0 +1,19 @@
+{
+  "config": {
+    "target": "http://localhost:3000",
+    "phases": [
+        {"name": "initialize", "duration": 300, "arrivalRate": 50442103954}
+    ]
+  },
+  "scenarios": [
+    {
+      "flow": [
+        {
+          "get": {
+            "url": "heavy"
+          }
+        }
+      ]
+    }
+  ]
+}
