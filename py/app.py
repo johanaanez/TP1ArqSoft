@@ -4,7 +4,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/ping")
 def ping():
 	return "python - ping"
 
