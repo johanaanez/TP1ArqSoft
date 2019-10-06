@@ -18,17 +18,15 @@ config:
   pool: 50 # All HTTP requests from all virtual users will be sent over the same connections
 
   phases:
-    - name: Ramp
+    - name: Simple
       duration: 30
-      arrivalRate: 5
-      rampTo: 30
-    - name: Plain
-      duration: 120
-      arrivalRate: 30
-    
+      arrivalRate: 6
+    - name: Medium
+      duration: 30
+      arrivalRate: 6
 
 scenarios:
-  - name: Root (/)
+  - name: root (/timeout)
     flow:
       - get:
-          url: '/'
+          url: '/timeout'

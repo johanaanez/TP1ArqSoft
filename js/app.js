@@ -23,6 +23,7 @@ app.get("/heavy", (req, res) => {
 			break;
 		}
 	}
+	res.status(200).send('node - heavy \n'+ ID);
 });
 
 app.listen(PORT, function () {
