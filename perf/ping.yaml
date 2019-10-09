@@ -20,14 +20,15 @@ config:
   phases:
     - name: Simple
       duration: 60 # tiempo en segundos
-      arrivalRate: 50 # cantidad de usuarios virtuales pegando por segundo 
+      arrivalRate: 10 # cantidad de usuarios virtuales pegando por segundo 
+      rampTo: 50
     - name: Medium
       duration: 60
       arrivalRate: 50
-      rampTo: 100
     - name: High
-      duration: 120
-      arrivalRate: 300
+      duration: 60
+      arrivalRate: 100
+      rampTo: 300
 
 scenarios:
   - name: root (/ping)
