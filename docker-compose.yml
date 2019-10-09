@@ -1,13 +1,13 @@
 version: '2'
 
 services:
-    tp1-node:
+    node:
         build: 
             context: ./js
             dockerfile: Dockerfile
         ports:
             - "3000:3000"
-    tp1-python:
+    gunicorn:
         build: 
             context: ./py
             dockerfile: Dockerfile
@@ -45,6 +45,7 @@ services:
         privileged: true
         links:
             - graphite
+        privileged: true
         command: -storage_driver="statsd" -storage_driver_host="graphite:8125" -storage_driver_db="cadvisor" -storage_driver_buffer_duration="1s"
         ports:
             - "8080:8080"
@@ -52,9 +53,6 @@ services:
             - "/:/rootfs:ro"
             - "/var/run:/var/run:rw"
             - "/sys:/sys:ro"
-            - "/var/lib/docker/:/var/lib/docker:ro"
-
-
 volumes:
     grafana_config:
         driver: local

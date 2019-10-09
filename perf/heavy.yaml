@@ -19,14 +19,17 @@ config:
 
   phases:
     - name: Simple
-      duration: 30
-      arrivalRate: 6
+      duration: 60
+      arrivalRate: 15
     - name: Medium
-      duration: 30
-      arrivalRate: 6
+      duration: 60
+      arrivalRate: 30
+    - name: Heavy
+      duration: 60
+      arrivalRate: 45
 
 scenarios:
-  - name: root (/timeout)
+  - name: Heavy (/heavy)
     flow:
       - get:
-          url: '/timeout'
+          url: '/heavy'

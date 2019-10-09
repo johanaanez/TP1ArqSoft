@@ -19,14 +19,18 @@ config:
 
   phases:
     - name: Simple
-      duration: 30
-      arrivalRate: 6
+      duration: 60 # tiempo en segundos
+      arrivalRate: 50 # cantidad de usuarios virtuales pegando por segundo 
     - name: Medium
-      duration: 30
-      arrivalRate: 6
+      duration: 60
+      arrivalRate: 50
+      rampTo: 100
+    - name: High
+      duration: 120
+      arrivalRate: 300
 
 scenarios:
-  - name: root (/timeout)
+  - name: root (/ping)
     flow:
       - get:
-          url: '/timeout'
+          url: '/ping'
