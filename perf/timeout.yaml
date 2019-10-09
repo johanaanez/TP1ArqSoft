@@ -19,8 +19,20 @@ config:
 
   phases:
     - name: Simple
-      duration: 60
+      duration: 30
+      arrivalCount: 15
+
+    - name: RampSimple
+      duration: 30
       arrivalRate: 5
+      rampTo: 30
+
+    - name: Pause
+      pause: 10
+    
+    - name: PlainSimple
+      duration: 30
+      arrivalRate: 15
 
 scenarios:
   - name: timeout (/)
