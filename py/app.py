@@ -22,7 +22,8 @@ def heavy():
     now = datetime.now()
     nowToMillisecond = now.timestamp() * 1000
     if (nowToMillisecond - startToMillisecond >= 5000):
-      return "python - heavy"
+      break
+  return "python - heavy"
 
 if __name__ == "__main__":
 	app.run(debug=True)
