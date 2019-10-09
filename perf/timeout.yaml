@@ -1,0 +1,41 @@
+config:
+  environments:
+    node:
+      target: 'http://localhost:5555/node'
+      plugins:
+        statsd:
+          host: localhost
+          port: 8125
+          prefix: "artillery-node"
+    gunicorn:
+      target: 'http://localhost:5555/gunicorn'
+      plugins:
+        statsd:
+          host: localhost
+          port: 8125
+          prefix: "artillery-gunicorn"
+
+  pool: 50 # All HTTP requests from all virtual users will be sent over the same connections
+
+  phases:
+    - name: Simple
+      duration: 30
+      arrivalCount: 15
+
+    - name: RampSimple
+      duration: 30
+      arrivalRate: 5
+      rampTo: 30
+
+    - name: Pause
+      pause: 10
+    
+    - name: PlainSimple
+      duration: 30
+      arrivalRate: 15
+
+scenarios:
+  - name: timeout (/)
+    flow:
+      - get:
+          url: '/timeout'
