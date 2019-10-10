@@ -21,7 +21,7 @@ def heavy():
   for i in range(times):
     now = datetime.now()
     nowToMillisecond = now.timestamp() * 1000
-    if (nowToMillisecond - startToMillisecond >= 5000):
+    if (nowToMillisecond - startToMillisecond >= 500):
       break
   return "python - heavy"
 
