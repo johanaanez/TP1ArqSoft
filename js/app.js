@@ -19,7 +19,7 @@ app.get("/heavy", (req, res) => {
 	var start = new Date();	
 	for (;;) {
 		var now = new Date();
-		if (now - start >= 5000) {
+		if (now - start >= 500) {
 			break;
 		}
 	}
