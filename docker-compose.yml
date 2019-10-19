@@ -54,12 +54,12 @@ services:
             - "/sys:/sys:ro"
     
     bbox:
-       image: arqsoft/bbox:201902.1
-       ports:
-           - "9090:9090"
-           - "9091:9091"
-       volumes:
-           - "./opt/bbox/config.properties:/etc/bbox/conf.d/default.conf:ro"
+        image: arqsoft/bbox:201902.1
+        ports:
+            - "9090:9090"
+            - "9091:9091"
+        volumes:
+            - ./config.properties:/opt/bbox/config.properties:rw
 volumes:
     grafana_config:
         driver: local
