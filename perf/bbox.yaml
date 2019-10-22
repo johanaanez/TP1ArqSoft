@@ -8,7 +8,7 @@ config:
           port: 8125
           prefix: "artillery-bbox-1"
     bbox_2:
-      target: 'http://localhost:9091'
+      target: 'http://localhost:9092'
       plugins:
         statsd:
           host: localhost
@@ -20,15 +20,16 @@ config:
   phases:
     - name: Simple
       duration: 60
-      arrivalRate: 10
-      #rampTo: 3
-    #- name: Medium
-    #  duration: 60
-    #  arrivalRate: 3
-    #- name: Hard
-    #  duration: 60
-    #  arrivalRate: 3
-      #rampTo: 5
+      arrivalCount: 60
+
+    - name: PlainSimple
+      duration: 60
+      arrivalRate: 60
+
+    - name: RampSimple
+      duration: 60
+      arrivalRate: 60
+      rampTo: 90
 
 scenarios:
   - name: Root (/)

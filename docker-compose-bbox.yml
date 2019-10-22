@@ -23,7 +23,7 @@ services:
     privileged: true
     links:
     - graphite
-    command: -storage_driver="statsd" -storage_driver_host="graphite:8125" -storage_driver_db="cadvisor" -storage_driver_buffer_duration="1s"
+    command: -storage_driver="statsd" -storage_driver_host="graphite:8125" -storage_driver_db="cadvisor" -storage_driver_buffer_duration="1s" --storage_duration=3m0s
     ports:
     - "8080:8080"
     volumes:
@@ -35,7 +35,7 @@ services:
     image: arqsoft/bbox:201902.1
     ports:
     - "9090:9090"
-    - "9091:9091"
+    - "9092:9092"
     volumes:
     - ./config.properties:/opt/bbox/config.properties:ro
 volumes:
