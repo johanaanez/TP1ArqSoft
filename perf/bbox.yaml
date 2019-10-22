@@ -21,14 +21,14 @@ config:
     - name: Simple
       duration: 60
       arrivalRate: 1
-      rampTo: 3
-    - name: Medium
-      duration: 60
-      arrivalRate: 3
-    - name: Hard
-      duration: 60
-      arrivalRate: 3
-      rampTo: 5
+      #rampTo: 3
+    #- name: Medium
+    #  duration: 60
+    #  arrivalRate: 3
+    #- name: Hard
+    #  duration: 60
+    #  arrivalRate: 3
+      #rampTo: 5
 
 scenarios:
   - name: Root (/)
