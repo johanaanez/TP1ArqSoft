@@ -15,13 +15,9 @@ config:
       duration: 60 # tiempo en segundos
       arrivalRate: 10 # cantidad de usuarios virtuales pegando por segundo 
       rampTo: 50
-    #- name: Medium
-     # duration: 60
-      #arrivalRate: 50
-    #- name: High
-     # duration: 60
-      #arrivalRate: 100
-      #rampTo: 300
+    - name: Medium
+      duration: 60
+      arrivalRate: 50
 
 scenarios:
   - name: replicated (/ping)
