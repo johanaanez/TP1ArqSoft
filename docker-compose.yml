@@ -52,14 +52,7 @@ services:
             - "/:/rootfs:ro"
             - "/var/run:/var/run:rw"
             - "/sys:/sys:ro"
-    
-    bbox:
-        image: arqsoft/bbox:201902.1
-        ports:
-            - "9090:9090"
-            - "9091:9091"
-        volumes:
-            - ./config.properties:/opt/bbox/config.properties:ro
+
 volumes:
     grafana_config:
         driver: local
