@@ -20,7 +20,7 @@ config:
   phases:
     - name: Simple
       duration: 60
-      arrivalRate: 1
+      arrivalRate: 10
       #rampTo: 3
     #- name: Medium
     #  duration: 60
