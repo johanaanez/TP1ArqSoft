@@ -45,7 +45,6 @@ services:
         privileged: true
         links:
             - graphite
-        privileged: true
         command: -storage_driver="statsd" -storage_driver_host="graphite:8125" -storage_driver_db="cadvisor" -storage_driver_buffer_duration="1s"
         ports:
             - "8080:8080"
@@ -53,6 +52,7 @@ services:
             - "/:/rootfs:ro"
             - "/var/run:/var/run:rw"
             - "/sys:/sys:ro"
+
 volumes:
     grafana_config:
         driver: local
