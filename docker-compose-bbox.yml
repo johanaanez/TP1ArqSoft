@@ -34,8 +34,7 @@ services:
   bbox:
     image: arqsoft/bbox:201902.1
     ports:
-    - "9090:9090"
-    - "9092:9092"
+    - "9092-9093:9092-9093"
     volumes:
     - ./config.properties:/opt/bbox/config.properties:ro
 volumes:
