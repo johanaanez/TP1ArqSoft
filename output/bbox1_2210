@@ -1,0 +1,324 @@
+AR0C02VR1DMHV2J:perf janez$ ./run-scenario.sh bbox bbox_1
+
+> perf@1.0.0 artillery /Users/janez/FIUBA/arqsoft/TrabajosPracticos/TP1ArqSoft/perf
+> artillery "run" "bbox.yaml" "-e" "bbox_1"
+
+Started phase 0 (Simple), duration: 60s @ 01:43:22(-0300) 2019-10-23
+Report @ 01:43:32(-0300) 2019-10-23
+Elapsed time: 10 seconds
+  Scenarios launched:  9
+  Scenarios completed: 8
+  Requests completed:  8
+  RPS sent: 1.01
+  Request latency:
+    min: 1105.6
+    max: 1288.4
+    median: 1107.6
+    p95: 1288.4
+    p99: 1288.4
+  Codes:
+    200: 8
+
+Report @ 01:43:42(-0300) 2019-10-23
+Elapsed time: 20 seconds
+  Scenarios launched:  11
+  Scenarios completed: 10
+  Requests completed:  10
+  RPS sent: 1
+  Request latency:
+    min: 1103.8
+    max: 1112.3
+    median: 1106.8
+    p95: 1112.3
+    p99: 1112.3
+  Codes:
+    200: 10
+
+Report @ 01:43:52(-0300) 2019-10-23
+Elapsed time: 30 seconds
+  Scenarios launched:  10
+  Scenarios completed: 10
+  Requests completed:  10
+  RPS sent: 1.1
+  Request latency:
+    min: 1104.1
+    max: 1112.6
+    median: 1106.2
+    p95: 1112.6
+    p99: 1112.6
+  Codes:
+    200: 10
+
+Report @ 01:44:02(-0300) 2019-10-23
+Elapsed time: 40 seconds
+  Scenarios launched:  10
+  Scenarios completed: 10
+  Requests completed:  10
+  RPS sent: 1.11
+  Request latency:
+    min: 1103.7
+    max: 1107.1
+    median: 1105.1
+    p95: 1107.1
+    p99: 1107.1
+  Codes:
+    200: 10
+
+Report @ 01:44:12(-0300) 2019-10-23
+Elapsed time: 50 seconds
+  Scenarios launched:  10
+  Scenarios completed: 10
+  Requests completed:  10
+  RPS sent: 1.11
+  Request latency:
+    min: 1103.6
+    max: 1107.9
+    median: 1105.3
+    p95: 1107.9
+    p99: 1107.9
+  Codes:
+    200: 10
+
+Started phase 1 (PlainSimple), duration: 60s @ 01:44:22(-0300) 2019-10-23
+Report @ 01:44:22(-0300) 2019-10-23
+Elapsed time: 1 minute, 0 seconds
+  Scenarios launched:  10
+  Scenarios completed: 10
+  Requests completed:  10
+  RPS sent: 1.11
+  Request latency:
+    min: 1103.3
+    max: 1152.4
+    median: 1107.5
+    p95: 1152.4
+    p99: 1152.4
+  Codes:
+    200: 10
+
+Report @ 01:44:32(-0300) 2019-10-23
+Elapsed time: 1 minute, 10 seconds
+  Scenarios launched:  600
+  Scenarios completed: 536
+  Requests completed:  536
+  RPS sent: 60
+  Request latency:
+    min: 1101.3
+    max: 1151.6
+    median: 1102.5
+    p95: 1108.2
+    p99: 1137.5
+  Codes:
+    200: 536
+
+Warning: 
+CPU usage of Artillery seems to be very high (pids: 77872)
+which may severely affect its performance.
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 01:44:42(-0300) 2019-10-23
+Elapsed time: 1 minute, 20 seconds
+  Scenarios launched:  601
+  Scenarios completed: 601
+  Requests completed:  601
+  RPS sent: 60.1
+  Request latency:
+    min: 1101
+    max: 1144.5
+    median: 1102.3
+    p95: 1110
+    p99: 1130
+  Codes:
+    200: 601
+
+Report @ 01:44:52(-0300) 2019-10-23
+Elapsed time: 1 minute, 30 seconds
+  Scenarios launched:  601
+  Scenarios completed: 600
+  Requests completed:  600
+  RPS sent: 60.1
+  Request latency:
+    min: 1101
+    max: 1147.3
+    median: 1102.2
+    p95: 1106
+    p99: 1118.1
+  Codes:
+    200: 600
+
+Warning: High CPU usage warning (pids: 77872).
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 01:45:02(-0300) 2019-10-23
+Elapsed time: 1 minute, 40 seconds
+  Scenarios launched:  600
+  Scenarios completed: 601
+  Requests completed:  601
+  RPS sent: 60
+  Request latency:
+    min: 1101
+    max: 1177.2
+    median: 1102.7
+    p95: 1110.2
+    p99: 1144.2
+  Codes:
+    200: 601
+
+Warning: High CPU usage warning (pids: 77872).
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Report @ 01:45:12(-0300) 2019-10-23
+Elapsed time: 1 minute, 50 seconds
+  Scenarios launched:  601
+  Scenarios completed: 600
+  Requests completed:  600
+  RPS sent: 60.1
+  Request latency:
+    min: 1100.9
+    max: 1165
+    median: 1102
+    p95: 1108.2
+    p99: 1123.7
+  Codes:
+    200: 600
+
+Warning: High CPU usage warning (pids: 77872).
+See https://artillery.io/docs/faq/#high-cpu-warnings for details.
+
+Started phase 2 (RampSimple), duration: 60s @ 01:45:22(-0300) 2019-10-23
+Report @ 01:45:22(-0300) 2019-10-23
+Elapsed time: 2 minutes, 0 seconds
+  Scenarios launched:  601
+  Scenarios completed: 601
+  Requests completed:  601
+  RPS sent: 60.16
+  Request latency:
+    min: 1101
+    max: 1224.5
+    median: 1103.1
+    p95: 1109.6
+    p99: 1182.9
+  Codes:
+    200: 601
+
+Report @ 01:45:32(-0300) 2019-10-23
+Elapsed time: 2 minutes, 10 seconds
+  Scenarios launched:  614
+  Scenarios completed: 609
+  Requests completed:  609
+  RPS sent: 61.4
+  Request latency:
+    min: 1101.1
+    max: 1261
+    median: 1102.9
+    p95: 1111.3
+    p99: 1190.6
+  Codes:
+    200: 609
+
+Report @ 01:45:42(-0300) 2019-10-23
+Elapsed time: 2 minutes, 20 seconds
+  Scenarios launched:  643
+  Scenarios completed: 640
+  Requests completed:  640
+  RPS sent: 64.3
+  Request latency:
+    min: 1100.8
+    max: 1270.9
+    median: 1103
+    p95: 1134.4
+    p99: 1229.7
+  Codes:
+    200: 640
+
+Report @ 01:45:52(-0300) 2019-10-23
+Elapsed time: 2 minutes, 30 seconds
+  Scenarios launched:  719
+  Scenarios completed: 712
+  Requests completed:  712
+  RPS sent: 71.8
+  Request latency:
+    min: 1101.2
+    max: 1307.2
+    median: 1103
+    p95: 1128.3
+    p99: 1238.4
+  Codes:
+    200: 712
+
+Report @ 01:46:02(-0300) 2019-10-23
+Elapsed time: 2 minutes, 40 seconds
+  Scenarios launched:  782
+  Scenarios completed: 773
+  Requests completed:  773
+  RPS sent: 78.3
+  Request latency:
+    min: 1101.2
+    max: 1239.9
+    median: 1102.8
+    p95: 1111.8
+    p99: 1140
+  Codes:
+    200: 773
+
+Report @ 01:46:12(-0300) 2019-10-23
+Elapsed time: 2 minutes, 50 seconds
+  Scenarios launched:  831
+  Scenarios completed: 833
+  Requests completed:  833
+  RPS sent: 81.85
+  Request latency:
+    min: 1101
+    max: 1274.6
+    median: 1102.7
+    p95: 1113.7
+    p99: 1168.9
+  Codes:
+    200: 833
+
+Report @ 01:46:22(-0300) 2019-10-23
+Elapsed time: 3 minutes, 0 seconds
+  Scenarios launched:  906
+  Scenarios completed: 895
+  Requests completed:  895
+  RPS sent: 91.06
+  Request latency:
+    min: 1101.1
+    max: 1432.8
+    median: 1103.1
+    p95: 1172.7
+    p99: 1374.3
+  Codes:
+    200: 895
+
+Report @ 01:46:24(-0300) 2019-10-23
+Elapsed time: 3 minutes, 1 second
+  Scenarios launched:  0
+  Scenarios completed: 100
+  Requests completed:  100
+  RPS sent: NaN
+  Request latency:
+    min: 1101.5
+    max: 1154.3
+    median: 1103.7
+    p95: 1138.8
+    p99: 1153.3
+  Codes:
+    200: 100
+
+All virtual users finished
+Summary report @ 01:46:24(-0300) 2019-10-23
+  Scenarios launched:  8159
+  Scenarios completed: 8159
+  Requests completed:  8159
+  RPS sent: 45.12
+  Request latency:
+    min: 1100.8
+    max: 1432.8
+    median: 1102.7
+    p95: 1117
+    p99: 1197
+  Scenario counts:
+    Root (/): 8159 (100%)
+  Codes:
+    200: 8159
+    
